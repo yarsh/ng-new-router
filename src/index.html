@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>ngNewRouter Example</title>
+	<script>
+		//document.write('<base href="' + document.location + '" />');
+	</script>
+
+	<!-- Angular -->
+	<script src="https://code.angularjs.org/1.5.0-rc.1/angular.js"></script>
+	<script src="lib/router.es5.js"></script>
+	<!--<script src="angular_1_router.js"></script>-->
+
+	<!-- App -->
+	<!-- order is irrelevant after app.js -->
+	<script src="app.js"></script>
+	<script src="AppController.js"></script>
+	<script src="HeaderController.js"></script>
+	<script src="components/home/HomeController.js"></script>
+	<script src="components/users/UsersController.js"></script>
+	<script src="services/UsersService.js"></script>
+
+	<link rel="stylesheet" href="assets/style.css"/>
+</head>
+
+<body ng-controller="AppController as app">
+<nav ng-controller="HeaderController as header">
+	<span class="logo">[Logo]</span>
+	<ul>
+		<li ng-class="{ active: header.isActive('/home')}">
+			<a ng-link="home">Home</a>
+		</li>
+		<li ng-class="{ active: header.isActive('/users')}">
+			<a ng-link="users">Users</a>
+		</li>
+	</ul>
+</nav>
+
+<div ng-viewport></div>
+
+</body>
+</html>

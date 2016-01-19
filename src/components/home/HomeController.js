@@ -4,8 +4,7 @@
 /**
  * Home Controller
  */
-angular
-  .module('myapp.home')
+angular.module('myapp')
   .controller('HomeController', Controller);
 
 function Controller() {

@@ -4,8 +4,7 @@
 /**
  * Users Controller
  */
-angular
-  .module('myapp.users')
+angular.module('myapp')
   .controller('UsersController', Controller);
 
 Controller.$inject = [

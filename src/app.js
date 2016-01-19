@@ -1,13 +1,12 @@
-angular
-  .module('myapp', [
-    'ngNewRouter',
+angular.module('myapp', [
+    'ngNewRouter'/*,
     'myapp.home',
-    'myapp.users'
-  ])
+    'myapp.users'*/
+  ]);
 
-.config(function ($componentLoaderProvider) {
+/*angular.module('myapp').config(function ($componentLoaderProvider) {
   $componentLoaderProvider.setTemplateMapping(function (name) {
     // name is component name
     return name + '.tpl.html';
   });
-})
+});*/

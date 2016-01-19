@@ -1,0 +1,25 @@
+nav {
+    border-bottom: solid 1px #ccc;
+}
+.logo {
+    float:left;
+    margin-right: 30px;
+}
+a {
+    text-decoration: none;
+}
+nav li {
+    display: inline;
+    list-style: none none inside;
+    padding: 8px;
+}
+.active {
+    background: #ebebeb;
+}
+
+table {
+    min-width:300px
+}
+table th {
+    text-align: left;
+}
